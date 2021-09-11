@@ -1,0 +1,49 @@
+$primary: #e4953c;  
+$secondary: #6c757d;
+$danger: #f44336;
+$success: #66c014;
+$warning: #3dbc8b;
+$info: #be12dcE6;
+
+$body-bg: #fff;
+
+@import "../lib/bootstrap/scss/bootstrap";
+
+/*nav.navbar {
+    background: linear-gradient($primary, $white)
+}*/
+#profileImage {
+    background: $primary;
+    text-transform: uppercase;
+    font-family: "Lucida Console";
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    font-size: 16px;
+    padding: 10px;
+    vertical-align: middle;
+    margin: 0 0px 0 0;
+}
+
+.box {
+    transition: box-shadow .3s;
+}
+
+.box {
+    box-shadow: 0 0 11px $primary;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem $primary;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: $primary;
+}
+
+.navbar .dropdown {
+    cursor: pointer;
+}

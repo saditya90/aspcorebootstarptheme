@@ -1,0 +1,387 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Change bootstap 5 theme dynamically using ASP.NET Core (.Net 5).</p> 
+</div>
+<div class="row">
+    <div class="col-6 col-sm-6 col-xl-6 mb-2">
+        <form method="post">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Primary">Primary</label>
+                    <div class="cp-primary"></div>
+                    <input type="hidden" asp-for="ModelInput.Primary" />
+                </li>
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Secondary">Secondary</label>
+                    <div class="cp-secondary"></div>
+                    <input type="hidden" asp-for="ModelInput.Secondary" />
+                </li>
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Danger">Danger</label>
+                    <div class="cp-danger"></div>
+                    <input type="hidden" asp-for="ModelInput.Danger" />
+                </li>
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Warning">Warning</label>
+                    <div class="cp-warning"></div>
+                    <input type="hidden" asp-for="ModelInput.Warning" />
+                </li>
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Success">Success</label>
+                    <div class="cp-success"></div>
+                    <input type="hidden" asp-for="ModelInput.Success" />
+                </li>
+                <li class="list-group-item">
+                    <label asp-for="ModelInput.Info">Info</label>
+                    <div class="cp-info"></div>
+                    <input type="hidden" asp-for="ModelInput.Info" />
+                </li>
+                <li class="list-group-item">
+                    <input type="submit"  value="Change Theme" class="btn btn-primary"/>
+                </li>
+            </ul> 
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 col-sm-6 col-xl-6">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <span class="badge bg-primary">Primary</span>
+        <span class="badge bg-secondary">Secondary</span>
+        <span class="badge bg-success">Success</span>
+        <span class="badge bg-danger">Danger</span>
+        <span class="badge bg-warning text-dark">Warning</span>
+        <span class="badge bg-info text-dark">Info</span>
+        <span class="badge bg-light text-dark">Light</span>
+        <span class="badge bg-dark">Dark</span>
+        <hr />
+        <span class="badge rounded-pill bg-primary">Primary</span>
+        <span class="badge rounded-pill bg-secondary">Secondary</span>
+        <span class="badge rounded-pill bg-success">Success</span>
+        <span class="badge rounded-pill bg-danger">Danger</span>
+        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+        <span class="badge rounded-pill bg-info text-dark">Info</span>
+        <span class="badge rounded-pill bg-light text-dark">Light</span>
+        <span class="badge rounded-pill bg-dark">Dark</span>
+        <hr />
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="col-6 col-sm-6 col-xl-6">
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+        </div>
+    </div>
+</div>
+@section Scripts{
+   <script type="text/javascript">
+       const pickr4 = Pickr.create({
+           el: '.cp-primary',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Primary").value
+       });
+       pickr4.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Primary").value = "#" + color.toHEXA().join("");
+       });
+       const pickr5 = Pickr.create({
+           el: '.cp-secondary',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Secondary").value
+       });
+       pickr5.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Secondary").value = "#" + color.toHEXA().join("");
+       });
+       const pickr6 = Pickr.create({
+           el: '.cp-danger',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Danger").value
+       });
+       pickr6.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Danger").value = "#" + color.toHEXA().join("");
+       });
+       const pickr7 = Pickr.create({
+           el: '.cp-warning',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Warning").value
+       });
+       pickr7.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Warning").value = "#" + color.toHEXA().join("");
+       });
+       const pickr8 = Pickr.create({
+           el: '.cp-success',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Success").value
+       });
+       pickr8.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Success").value = "#" + color.toHEXA().join("");
+       });
+       const pickr9 = Pickr.create({
+           el: '.cp-info',
+           theme: 'nano',
+           swatches: [
+               'rgba(244, 67, 54, 1)',
+               'rgba(233, 30, 99, 0.95)',
+               'rgba(156, 39, 176, 0.9)',
+               'rgba(103, 58, 183, 0.85)',
+               'rgba(63, 81, 181, 0.8)',
+               'rgba(33, 150, 243, 0.75)',
+               'rgba(3, 169, 244, 0.7)',
+               'rgba(0, 188, 212, 0.7)',
+               'rgba(0, 150, 136, 0.75)',
+               'rgba(76, 175, 80, 0.8)',
+               'rgba(139, 195, 74, 0.85)',
+               'rgba(205, 220, 57, 0.9)',
+               'rgba(255, 235, 59, 0.95)',
+               'rgba(255, 193, 7, 1)'
+           ],
+           components: {
+               preview: true,
+               opacity: true,
+               hue: true,
+               interaction: {
+                   hex: true,
+                   rgba: true,
+                   hsla: true,
+                   hsva: true,
+                   cmyk: true,
+                   input: true,
+                   clear: true,
+                   save: true
+               }
+           },
+           default: document.getElementById("ModelInput_Info").value
+       });
+       pickr9.on('save', (color, instance) => {
+           document.getElementById("ModelInput_Info").value = "#" + color.toHEXA().join("");
+       });
+   </script>
+
+ }
